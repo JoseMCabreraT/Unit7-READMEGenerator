@@ -8,6 +8,29 @@ import fs from 'fs';
 
 // TODO: Create an array of questions for user input
 const questions = [
+
+    {
+        type: 'input',
+
+    },
+    {
+
+    },
+    {
+
+    },
+
+    {
+
+    },
+
+    {
+
+    },
+    {
+
+    },
+    
     "Whats your project Title?:",
     "Enter Description:",
     "How do you Install the application?:",
