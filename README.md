@@ -1,7 +1,5 @@
-
-        # Challenge 7 README Generator
-
-        ## Description
+# Challenge 7 README Generator
+## Description
         test 1
 
         ## Installation

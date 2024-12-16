@@ -2,7 +2,7 @@
 
 import inquirer from "inquirer"; 
 import fs from 'fs';
-//import { writeFile } from 'fs/promises';
+import generateMarkdown from "./utils/generateMarkdown.js";
 
 
 
@@ -55,7 +55,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please select a license:',
-        choices: ['Apache', 'European Union Public License', 'GNU General Public License v3.0', 'Microsoft', 'MIT', 'Mozilla', 'PostgreSQL'],
+        choices: ['Apache 2.0', 'GPL 3.0', 'European Union Public License', 'GNU General Public License v3.0', 'Microsoft', 'MIT', 'Mozilla', 'PostgreSQL', 'None'],
     },
 
     {
@@ -87,33 +87,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
-
-      const generateREADME = `
-        # ${answers.title}
-
-        ## Description
-        ${answers.description}
-
-        ## Installation
-        ${answers.installation}
-
-        ## Usage
-        ${answers.usage}
-
-        ## Contributing
-        ${answers.Contribuitors}
-
-        ## Test
-        ${answers.test}
-
-        ## License
-        ${answers.license}
-
-        ## Credits
-        ${answers.username}
-        ${answers.email}
-        `;
-            writeToFile('README.md', generateREADME);
+        const generateREADME = generateMarkdown(answers);
+         
+        writeToFile('GeneratedREADME.md', generateREADME);
     });
 } // function for initialize the app.
 
