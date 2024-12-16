@@ -52,21 +52,32 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+
 ## Installation
 ${data.installation}
 
 ## Usage
 ${data.usage}
 
+${renderLicenseSection(data.license)}
+
 ## Contributing
 ${data.Contribuitors}
 
-## Test
+## Tests
 ${data.test}
 
-${renderLicenseSection(data.license)}
 
-## Credits
+## Questions
 ${data.username}
 ${data.email}
 `;

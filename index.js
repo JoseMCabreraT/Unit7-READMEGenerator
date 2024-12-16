@@ -89,7 +89,7 @@ function init() {
     inquirer.prompt(questions).then((answers) => {
         const generateREADME = generateMarkdown(answers);
          
-        writeToFile('GeneratedREADME.md', generateREADME);
+        writeToFile('GeneratedREADME.md', generateREADME); //Here we create the generated README file.
     });
 } // function for initialize the app.
 
