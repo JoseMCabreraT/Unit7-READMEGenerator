@@ -6,7 +6,7 @@
 I built a website where the users can generate a README file for projects and repositories. The application was created because programmers need to have more time to work with the code, so this app will speed up the web developer's job. The user can enter the title of the project, description, installation guidelines, usage, license, contribuitors, tests, and questions. After the user input is completed, the README file will be generated.
 
 
-Link to the walkthrough video of the app:
+Link to the walkthrough video of the app: https://drive.google.com/file/d/1n5IyUXwlTn0NysLq7UQbdEjZ648OBte2/view?usp=drive_link
 
 ## Table of Contents
 
